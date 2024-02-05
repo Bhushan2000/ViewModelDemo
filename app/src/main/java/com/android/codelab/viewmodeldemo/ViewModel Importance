@@ -1,0 +1,14 @@
+
+ In this application a random no generate from 1-9
+ when the application is in portrait mode there is no problem.
+ but when screen rotates and configuration changes then the random data again generated and the previous data loosed.
+ Data not retained.
+
+ To overcome this issue we use ViewModel which preserve the data when activity is created and give same data
+  when configuration changes.
+
+  Advantages:
+  1) Not created new number
+  2) This will reduce lot of task a lot of time in case you are fetching the data from the Network
+
+  3) ViewModel only destroyed when the activity is completely destroyed.
